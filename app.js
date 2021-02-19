@@ -15,6 +15,7 @@ const mongoose = require('mongoose');
 const url = config.mongoUrl;
 
 const connect = mongoose.connect(url, {
+  dbName: "nucampsite",
   useCreateIndex: true,
   useFindAndModify: false,
   useNewUrlParser: true,
